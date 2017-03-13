@@ -1,0 +1,96 @@
+[
+    {
+        "lessonName": "Cafe Demo",
+        "businessProfile": [{
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nisi quis porttitor. Donec quis turpis nec nisl consequat sagittis in et dui. Vestibulum ut lorem rhoncus purus sollicitudin varius non sed sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "mission": "We wanna make coffee that'll keep you awake the entire day.",
+            "origin": "New England",
+            "aesthetic": "modern",
+            "images": [{
+                "imgLink": "./img/placeholder.jpg",
+                "description": "This is a logo."
+            }, {
+                "imgLink": "./img/placeholder.jpg",
+                "description": "This is something else."
+            }, {
+                "imgLink": "./img/placeholder.jpg",
+                "description": "Three for good luck, I suppose"
+            }],
+            "primaryColor": "#fff",
+            "seondaryColor": "#000",
+            "tertiaryColor": "#dfdfdf"
+        }],
+        "lessonContent": [{
+            "difficuty": 5,
+            "conversation": [{
+                "name": "Lily",
+                "label": "Client",
+                "content": "I don't really like the size of this heading. Can you guys try to figure something else out?"
+            }, {
+                "name": "Madeline",
+                "label": "Designer",
+                "content": "Sure thing, Lily! We can make it larger, so more attention is drawn to it."
+            }],
+            "task": "Make the header font a little larger.",
+            "hints": [{
+                "title": "Find the correct element to target.",
+                "description": "Some useful tip."
+            }, {
+                "title": "???",
+                "description": "Is another hint needed?"
+            }],
+            "downloads": [{
+                "label": "Beginning File",
+                "path": "./img/placeholder.jpg"
+            }, {
+                "label": "Supporting File",
+                "path": "./img/placeholder.jpg"
+            }],
+            "images": [{
+                "label": "Beginning File",
+                "path": "./img/placeholder.jpg"
+            }, {
+                "label": "Supporting File",
+                "path": "./img/placeholder.jpg"
+            }],
+            "endText": "Here's some text to sum the ending piece up.",
+            "endPath": "./img/placeholder.jpg"
+        }, {
+        "lessonContent": [{
+            "difficuty": 4,
+            "conversation": [{
+                "name": "Lily",
+                "label": "Client",
+                "content": "I don't really like the size of this heading. Can you guys try to figure something else out?"
+            }, {
+                "name": "Madeline",
+                "label": "Designer",
+                "content": "Sure thing, Lily! We can make it larger, so more attention is drawn to it."
+            }],
+            "task": "Make the header font a little larger.",
+            "hints": [{
+                "title": "Find the correct element to target.",
+                "description": "Some useful tip."
+            }, {
+                "title": "???",
+                "description": "Is another hint needed?"
+            }],
+            "downloads": [{
+                "label": "Beginning File",
+                "path": "./img/placeholder.jpg"
+            }, {
+                "label": "Supporting File",
+                "path": "./img/placeholder.jpg"
+            }],
+            "images": [{
+                "label": "Beginning File",
+                "path": "./img/placeholder.jpg"
+            }, {
+                "label": "Supporting File",
+                "path": "./img/placeholder.jpg"
+            }],
+            "endText": "Here's some text to sum the ending piece up.",
+            "endPath": "./img/placeholder.jpg"
+        }],
+    }
+]
