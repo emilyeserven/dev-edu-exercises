@@ -2,39 +2,46 @@ Difficulty index!
 <div class="top-nav">
     <a class="btn btn-default" href="#!/directory">Directory</a>&nbsp;&nbsp;<a class="btn btn-default" href="#!/lessons/0">Lesson Directory</a>
 </div>
-<h2>Item Name</h2>
-<h3>Lesson Tier</h3>
+<h2>{{lessons[whichItem].lessonName}}</h2>
+<h3>Tier {{lessons[whichItem].lessonContent[whichLesson].difficulty}}</h3>
 <div class="single-lesson">
 
     <div class="row">
-        <div class="col-md-6">
-            <div class="conversation">
-                <div class="chat-item">
-                    <p>
-                        <span class="chat-name">Person</span>&nbsp;&nbsp;<span class="chat-title">Client</span>
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed erat magna. Nulla at lacus vestibulum dolor semper auctor. Proin convallis lorem eu velit ornare tempor. Sed facilisis id augue quis tincidunt. Maecenas pulvinar felis lacus, eget aliquam dolor dapibus malesuada. Morbi diam neque, tempor ac odio vel, dictum convallis augue.
-                    </p>
-                </div>
-                <div class="chat-item">
-                    <p>
-                        <span class="chat-name">Person</span>&nbsp;&nbsp;<span class="chat-title">Client</span>
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed erat magna. Nulla at lacus vestibulum dolor semper auctor. Proin convallis lorem eu velit ornare tempor. Sed facilisis id augue quis tincidunt. Maecenas pulvinar felis lacus, eget aliquam dolor dapibus malesuada. Morbi diam neque, tempor ac odio vel, dictum convallis augue.
-                    </p>
+        <div class="col-md-8">
+            <div class="conversation-holder well">
+                <div class="conversation" ng-repeat="chatitem in lessons[whichItem].lessonContent[whichLesson].conversation">
+                    <div class="chat-item">
+                        <p>
+                            <span class="chat-name">{{chatitem.name}}</span>&nbsp;&nbsp;<span class="chat-title">{{chatitem.label}}</span>
+                        </p>
+                        <p>
+                            {{chatitem.content}}
+                        </p>
+                        <p class="chat-time">
+                            <span>{{chatitem.time}}</span>
+                        </p>
+                    </div>
                 </div>
             </div>
+            <div class="task bg-info">
+                <b>Task:</b> {{lessons[whichItem].lessonContent[whichLesson].task}}
+            </div>
         </div>
-        <div class="col-md-6">
-            <p>
-                <a class="btn btn-default" href="#">Starter Files</a><br />
-                <a class="btn btn-default" href="#">Starter Files</a>
-            </p>
-            <h4>Results</h4>
-            <img src="./img/placeholder.jpg" />
+        <div class="col-md-4">
+            <div class="downloads-buttons" ng-repeat="download in lessons[whichItem].lessonContent[whichLesson].downloads">
+                <a class="btn btn-default text-left btn-block" href="{{download.path}}">{{download.label}}</a><br />
+            </div>
+            <h4>Images</h4>
+            <div class="support-images" ng-repeat="image in lessons[whichItem].lessonContent[whichLesson].images">
+                <img ng-src="{{image.path}}" />
+                <p>
+                    {{image.label}}
+                </p>
+            </div>
         </div>
+    </div>
+    <div class="clearfix">
+
     </div>
     <div class="row lesson-toolbar">
         <div style="float:left;">
@@ -42,6 +49,56 @@ Difficulty index!
         </div>
         <div style="float:right;">
             <a class="btn btn-success" href="#">Done</a>
+        </div>
+    </div>
+    <div class="row hints">
+        <div class="hint-holder">
+            <h3>Hints</h3>
+            <div class="hint-item" ng-repeat="hint in lessons[whichItem].lessonContent[whichLesson].hints">
+                <h4>{{hint.title}}</h4>
+                <p>
+                    {{hint.description}}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row profile">
+        <div class="profile-holder">
+            <h3>Business Profile</h3>
+            <p>
+                <b>Company Description:</b> {{lessons[whichItem].businessProfile[0].description}}
+            </p>
+            <p>
+                <b>Mission:</b> {{lessons[whichItem].businessProfile[0].mission}}
+            </p>
+            <p>
+                <b>Origin:</b> {{lessons[whichItem].businessProfile[0].origin}}
+            </p>
+            <p>
+                <b>Desired Aesthetic:</b> {{lessons[whichItem].businessProfile[0].aesthetic}}
+            </p>
+            <div class="row color-holder">
+                <div class="col-md-4">
+                    <span>Primary Color</span>
+                    <div class="color-container" style="background-color: {{lessons[whichItem].businessProfile[0].primaryColor}}"></div>
+                </div>
+                <div class="col-md-4">
+                    <span>Secondary Color</span>
+                    <div class="color-container" style="background-color: {{lessons[whichItem].businessProfile[0].secondaryColor}}"></div>
+                </div>
+                <div class="col-md-4">
+                    <span>Tertiary Color</span>
+                    <div class="color-container" style="background-color: {{lessons[whichItem].businessProfile[0].tertiaryColor}}"></div>
+                </div>
+            </div>
+            <div class="business-images">
+                <div ng-repeat="image in lessons[whichItem].businessProfile[0].images">
+                    <img ng-src="{{image.imgLink}}" />
+                    <p>
+                        {{image.description}}
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -4,76 +4,20 @@ Directory index!
     Select lessons from here?
 </p>
 <div class="directory-listing">
-    <div class="directory-item">
-        <h3>Item Name</h3>
+    <div class="directory-item" ng-repeat="lesson in lessons">
+        <h3>{{lesson.lessonName}}</h3>
         <p>
-            Some description about this thing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed erat magna.
+            {{lesson.description}}
         </p>
-        <a class="btn btn-primary" href="#!/lessons/0">Item Page</a>
-        <a class="btn btn-default" href="#!/lessons/0/1">Tier 1</a>
-        <a class="btn btn-default" href="#!/lessons/0/2">Tier 2</a>
-        <a class="btn btn-default" href="#!/lessons/0/3">Tier 3</a>
-        <a class="btn btn-default" href="#!/lessons/0/4">Tier 4</a>
-        <a class="btn btn-default" href="#!/lessons/0/5">Tier 5</a>
+        <a class="btn btn-primary" href="#!/lessons/{{lessons.indexOf(lesson)}}">Item Page</a>
+        <a class="btn btn-default" href="#!/lessons/{{lessons.indexOf(lesson)}}/0">Tier 1</a>
+        <a class="btn btn-default" href="#!/lessons/{{lessons.indexOf(lesson)}}/1">Tier 2</a>
+        <a class="btn btn-default" href="#!/lessons/{{lessons.indexOf(lesson)}}/2">Tier 3</a>
+        <a class="btn btn-default" href="#!/lessons/{{lessons.indexOf(lesson)}}/3">Tier 4</a>
+        <a class="btn btn-default" href="#!/lessons/{{lessons.indexOf(lesson)}}/4">Tier 5</a>
         <a class="btn btn-default" href="#">←</a>
         <div class="lesson-tags">
-            Tags:
-            <ul class="list-unstyled">
-                <li>
-                    Words
-                </li>
-                <li>
-                    Things
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="directory-item">
-        <h3>Item Name</h3>
-        <p>
-            Some description about this thing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed erat magna.
-        </p>
-        <a class="btn btn-primary" href="#!/lessons/0">Item Page</a>
-        <a class="btn btn-default" href="#!/lessons/0/1">Tier 1</a>
-        <a class="btn btn-default" href="#!/lessons/0/2">Tier 2</a>
-        <a class="btn btn-default" href="#!/lessons/0/3">Tier 3</a>
-        <a class="btn btn-default" href="#!/lessons/0/4">Tier 4</a>
-        <a class="btn btn-default" href="#!/lessons/0/5">Tier 5</a>
-        <a class="btn btn-default" href="#">←</a>
-        <div class="lesson-tags">
-            Tags:
-            <ul class="list-unstyled">
-                <li>
-                    Words
-                </li>
-                <li>
-                    Things
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="directory-item">
-        <h3>Item Name</h3>
-        <p>
-            Some description about this thing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed erat magna.
-        </p>
-        <a class="btn btn-primary" href="#!/lessons/0">Item Page</a>
-        <a class="btn btn-default" href="#!/lessons/0/1">Tier 1</a>
-        <a class="btn btn-default" href="#!/lessons/0/2">Tier 2</a>
-        <a class="btn btn-default" href="#!/lessons/0/3">Tier 3</a>
-        <a class="btn btn-default" href="#!/lessons/0/4">Tier 4</a>
-        <a class="btn btn-default" href="#!/lessons/0/5">Tier 5</a>
-        <a class="btn btn-default" href="#">←</a>
-        <div class="lesson-tags">
-            Tags:
-            <ul class="list-unstyled">
-                <li>
-                    Words
-                </li>
-                <li>
-                    Things
-                </li>
-            </ul>
+            Tags: {{lesson.tags.join(', ')}}
         </div>
     </div>
 </div>

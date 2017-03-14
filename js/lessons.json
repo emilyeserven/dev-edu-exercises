@@ -2,6 +2,7 @@
     {
         "lessonName": "Cafe Demo",
         "tags": ["Something", "Else", "Whatever"],
+        "description": "Something about the industry I guess? Or the lesson itself? But cohesion is loose so uh.....?",
         "businessProfile": [{
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nisi quis porttitor. Donec quis turpis nec nisl consequat sagittis in et dui. Vestibulum ut lorem rhoncus purus sollicitudin varius non sed sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
             "mission": "We wanna make coffee that'll keep you awake the entire day.",
@@ -17,20 +18,22 @@
                 "imgLink": "./img/placeholder.jpg",
                 "description": "Three for good luck, I suppose"
             }],
-            "primaryColor": "#fff",
-            "seondaryColor": "#000",
+            "primaryColor": "#345632",
+            "secondaryColor": "#000",
             "tertiaryColor": "#dfdfdf"
         }],
         "lessonContent": [{
-            "difficuty": 5,
+            "difficulty": 1,
             "conversation": [{
                 "name": "Lily",
                 "label": "Client",
-                "content": "I don't really like the size of this heading. Can you guys try to figure something else out?"
+                "content": "I don't really like the size of this heading. Can you guys try to figure something else out?",
+                "time": "30 minutes ago"
             }, {
                 "name": "Madeline",
                 "label": "Designer",
-                "content": "Sure thing, Lily! We can make it larger, so more attention is drawn to it."
+                "content": "Sure thing, Lily! We can make it larger, so more attention is drawn to it.",
+                "time": "10 minutes ago"
             }],
             "task": "Make the header font a little larger.",
             "hints": [{
@@ -57,8 +60,7 @@
             "endText": "Here's some text to sum the ending piece up.",
             "endPath": "./img/placeholder.jpg"
         }, {
-        "lessonContent": [{
-            "difficuty": 4,
+            "difficulty": 2,
             "conversation": [{
                 "name": "Lily",
                 "label": "Client",
@@ -92,6 +94,6 @@
             }],
             "endText": "Here's some text to sum the ending piece up.",
             "endPath": "./img/placeholder.jpg"
-        }],
+        }]
     }
 ]
