@@ -1,6 +1,7 @@
 [
     {
         "lessonName": "Cafe Demo",
+        "tags": ["Something", "Else", "Whatever"],
         "businessProfile": [{
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nisi quis porttitor. Donec quis turpis nec nisl consequat sagittis in et dui. Vestibulum ut lorem rhoncus purus sollicitudin varius non sed sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
             "mission": "We wanna make coffee that'll keep you awake the entire day.",

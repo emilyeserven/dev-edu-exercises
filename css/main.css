@@ -1,9 +1,45 @@
 body {
-  background-color: #000; }
+  background-color: #000;
+}
 
 .main {
   background-color: #fff;
-  margin-top: 100px;
-  padding: 35px 0; }
+  margin-top: 50px;
+  padding: 35px 0;
+}
+
+.directory-listing {
+  border: 1px #eee solid;
+  border-radius: 5px;
+}
+
+.directory-item {
+  padding: 20px 30px 25px;
+}
+.directory-item:nth-child(even) {
+  background-color: #eee;
+}
+
+.lesson-tags {
+  padding: 10px 0;
+}
+.lesson-tags ul {
+  display: inline;
+}
+.lesson-tags li {
+  display: inline;
+}
+.lesson-toolbar {
+  padding-top: 20px;
+}
+
+.single-lesson img {
+  width: 100%;
+  max-height: 300px;
+}
+
+.top-nav {
+  padding: 20px 0 10px;
+}
 
 /*# sourceMappingURL=main.css.map */
