@@ -64,18 +64,137 @@
             "conversation": [{
                 "name": "Lily",
                 "label": "Client",
-                "content": "I don't really like the size of this heading. Can you guys try to figure something else out?"
+                "content": "The menu looks a bit funny, can it be fixed somehow?"
             }, {
                 "name": "Madeline",
                 "label": "Designer",
-                "content": "Sure thing, Lily! We can make it larger, so more attention is drawn to it."
+                "content": "I know what you mean, it looks like there's some issues with spacing. We can make it so there's more space between the items and even add some other touches."
+            }, {
+                "name": "Lily",
+                "label": "Client",
+                "content": "Wow, that's great, thank you!"
             }],
-            "task": "Make the header font a little larger.",
+            "task": "Add some spacing between each item and differentiate the menu item names from the descriptions and prices.",
             "hints": [{
-                "title": "Find the correct element to target.",
+                "title": "The Box Model",
                 "description": "Some useful tip."
             }, {
-                "title": "???",
+                "title": "Margin vs Padding",
+                "description": "Is another hint needed?"
+            }, {
+                "title": "Hierarchy with Text Effects",
+                "description": "Is another hint needed?"
+            }],
+            "downloads": [{
+                "label": "Beginning File",
+                "path": "./img/placeholder.jpg"
+            }, {
+                "label": "Supporting File",
+                "path": "./img/placeholder.jpg"
+            }],
+            "images": [{
+                "label": "Beginning File",
+                "path": "./img/placeholder.jpg"
+            }, {
+                "label": "Supporting File",
+                "path": "./img/placeholder.jpg"
+            }],
+            "endText": "Here's some text to sum the ending piece up.",
+            "endPath": "./img/placeholder.jpg"
+        }, {
+            "difficulty": 3,
+            "conversation": [{
+                "name": "Lily",
+                "label": "Client",
+                "content": "I'm not sure I like how the menu has items one-by-one. Is it possible for you to go and fix that? Maybe the items are side by side?"
+            }, {
+                "name": "Madeline",
+                "label": "Designer",
+                "content": "Sure, how does this design look?"
+            }, {
+                "name": "Lily",
+                "label": "Client",
+                "content": "Hmmmm, I think that's nice. Is it possible to see it in action?"
+            }, {
+                "name": "Madeline",
+                "label": "Designer",
+                "content": "Yes, we can get that done."
+            }],
+            "task": "Change the menu so it has two columns.",
+            "hints": [{
+                "title": "The Box Model",
+                "description": "Some useful tip."
+            }, {
+                "title": "Margin vs Padding",
+                "description": "Is another hint needed?"
+            }, {
+                "title": "Hierarchy with Text Effects",
+                "description": "Is another hint needed?"
+            }],
+            "downloads": [{
+                "label": "Beginning File",
+                "path": "./img/placeholder.jpg"
+            }, {
+                "label": "Supporting File",
+                "path": "./img/placeholder.jpg"
+            }],
+            "images": [{
+                "label": "Beginning File",
+                "path": "./img/placeholder.jpg"
+            }, {
+                "label": "Supporting File",
+                "path": "./img/placeholder.jpg"
+            }],
+            "endText": "Here's some text to sum the ending piece up.",
+            "endPath": "./img/placeholder.jpg"
+        }, {
+            "difficulty": 4,
+            "conversation": [{
+                "name": "Lily",
+                "label": "Client",
+                "content": "I love the design you did, Madeline! I can't wait to see the website working!"
+            }, {
+                "name": "Madeline",
+                "label": "Designer",
+                "content": "I'm glad you're excited, we certainly are too! Since the design is done, we'll head into development now."
+            }],
+            "task": "Create a website from the PDF provided.",
+            "hints": [{
+                "title": "Bootstrap",
+                "description": "Some useful tip."
+            }, {
+                "title": "WordPress",
+                "description": "Is another hint needed?"
+            }],
+            "downloads": [{
+                "label": "Beginning File",
+                "path": "./img/placeholder.jpg"
+            }, {
+                "label": "Supporting File",
+                "path": "./img/placeholder.jpg"
+            }],
+            "images": [{
+                "label": "Beginning File",
+                "path": "./img/placeholder.jpg"
+            }, {
+                "label": "Supporting File",
+                "path": "./img/placeholder.jpg"
+            }],
+            "endText": "Here's some text to sum the ending piece up.",
+            "endPath": "./img/placeholder.jpg"
+        }, {
+            "difficulty": 5,
+            "conversation": [{
+                "name": "Lily",
+                "label": "Client",
+                "content": "Thanks so much for helping me out! I can't believe I found someone who can make the whole website. I sent you some more details about my business, hopefully that's enough for you to go off of?"
+            }],
+            "task": "Design and develop a website for the client.",
+            "hints": [{
+                "title": "Choosing Platforms and Frameworks",
+                "description": "Some useful tip."
+            }, {
+                "title": "Documentation",
                 "description": "Is another hint needed?"
             }],
             "downloads": [{
